@@ -1,13 +1,17 @@
 # Simple Web Application
 
 This is a simple web application using [Python Flask](http://flask.pocoo.org/) and [MySQL](https://www.mysql.com/) database. 
-This is used in the demonstration of development of Ansible Playbooks.
+This is used in the demonstration of development of Ansible Playbooks and Deploying to AWS ECS .
+
   
   Below are the steps required to get this working on a base linux system.
   
   - Install all required dependencies
   - Install and Configure Web Server
   - Start Web Server
+ ## Deploy the Docker App to AWS using Elastic Container Service (ECS)
+  We start by building a local docker image and uploading it to Elastic Container Registry. We create an ECS Cluster, and configure a task to run our docker image. Finally, we launch a Task into the cluster and expose the app to the internet via VPC.
+ 
    
 ## 1. Install all required dependencies
   
